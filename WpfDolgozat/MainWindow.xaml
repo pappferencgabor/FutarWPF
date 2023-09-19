@@ -1,0 +1,87 @@
+﻿<Window x:Class="WpfDolgozat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfDolgozat"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="btnFeladat3"
+            Content="3. feladat"
+            Width="200"
+            Height="35"
+            Grid.ColumnSpan="3" 
+            Click="btnFeladat3_Click"/>
+
+        <ComboBox x:Name="cmbFuvarID"
+            Width="200"
+            Height="35"
+            Grid.Row="1"/>
+        <Button x:Name="btnFeladat4"
+            Content="4. feladat"
+            Width="200"
+            Height="35"
+            Grid.Column="1"
+            Grid.Row="1"
+            Grid.ColumnSpan="2" 
+            Click="btnFeladat4_Click"/>
+
+        <Button x:Name="btnFeladat5"
+            Content="5. feladat"
+            Width="200"
+            Height="35"
+            Grid.Row="2"
+            Grid.RowSpan="2" 
+            Click="btnFeladat5_Click"/>
+        <ListBox x:Name="lbFizetesiModok"
+            Grid.Column="1"
+            Grid.Row="2"
+            Grid.ColumnSpan="2"
+            Grid.RowSpan="2"/>
+
+        <Button x:Name="btnFeladat6"
+            Content="6. feladat"
+            Width="200"
+            Height="35"
+            Grid.Row="4"
+            Grid.ColumnSpan="3" 
+            Click="btnFeladat6_Click"/>
+
+        <Button x:Name="btnFeladat7"
+            Content="7. feladat"
+            Width="200"
+            Height="35"
+            Grid.Row="5"
+            Grid.RowSpan="2" 
+            Click="btnFeladat7_Click"/>
+        <ListBox x:Name="lbLeghosszabbFuvar"
+            Grid.Column="1"
+            Grid.Row="5"
+            Grid.ColumnSpan="2"
+            Grid.RowSpan="2"/>
+
+        <Button x:Name="btnFeladat8"
+            Content="8. feladat"
+            Width="200"
+            Height="35"
+            Grid.Row="7"
+            Grid.ColumnSpan="3" Click="btnFeladat8_Click"/>
+    </Grid>
+</Window>
